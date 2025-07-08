@@ -1,5 +1,6 @@
 package com.atlas.orcsswordemagic;
 
+import com.atlas.orcsswordemagic.block.ModBlocks;
 import com.atlas.orcsswordemagic.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class OrcsSeMMod
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -54,6 +56,9 @@ public class OrcsSeMMod
         }
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.ORK_SWORD);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept((ModBlocks.ORC_WOOD));
         }
     }
 
