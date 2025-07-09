@@ -1,6 +1,7 @@
 package com.atlas.orcsswordemagic;
 
 import com.atlas.orcsswordemagic.block.ModBlocks;
+import com.atlas.orcsswordemagic.item.ModCreativeModeTabs;
 import com.atlas.orcsswordemagic.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class OrcsSeMMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -52,13 +54,14 @@ public class OrcsSeMMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.TEST);
+            event.accept(ModItems.PURPERIUM_INGOT);
         }
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.ORK_SWORD);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept((ModBlocks.ORC_WOOD));
+            event.accept(ModBlocks.PURPERIUM_ORE);
         }
     }
 

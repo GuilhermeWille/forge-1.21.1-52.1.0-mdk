@@ -1,5 +1,7 @@
 {
-  "item.osem.test": "Test item",
+  "creativetab.osem.osem_item_tab":"Orcs, Swords & Magic",
+  "block.osem.purperium_ore": "Purperium Ore",
+  "item.osem.purperium_ingot": "Purperium ingot",
   "item.osem.ork_sword": "Ork Sword",
   "block.osem.orc_wood": "Orc Wood"
 }

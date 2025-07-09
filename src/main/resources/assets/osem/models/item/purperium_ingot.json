@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "osem:item/test"
+    "layer0": "osem:item/purperium_ingot"
   }
 }
