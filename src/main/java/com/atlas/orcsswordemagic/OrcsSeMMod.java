@@ -62,6 +62,7 @@ public class OrcsSeMMod
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept((ModBlocks.ORC_WOOD));
             event.accept(ModBlocks.PURPERIUM_ORE);
+            event.accept(ModBlocks.PURPERIUM_DEEPSLATE_ORE);
         }
     }
 

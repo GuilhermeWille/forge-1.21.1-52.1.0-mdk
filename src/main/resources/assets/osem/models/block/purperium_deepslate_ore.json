@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "osem:block/purperium_deepslate_ore"
+  }
+}

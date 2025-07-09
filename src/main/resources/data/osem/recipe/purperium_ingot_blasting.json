@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1.0,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "osem:purperium_ore"
+  },
+  "result":{
+    "id": "osem:purperium_ingot"
+  }
+}

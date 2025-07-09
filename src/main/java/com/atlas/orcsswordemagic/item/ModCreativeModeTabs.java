@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ORK_SWORD.get());
                         pOutput.accept(ModBlocks.ORC_WOOD.get());
                         pOutput.accept(ModBlocks.PURPERIUM_ORE.get());
+                        pOutput.accept(ModBlocks.PURPERIUM_DEEPSLATE_ORE.get());
                     })
 
                     .build());
